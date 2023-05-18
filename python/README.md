@@ -1,5 +1,16 @@
 # Python
 
+## この資料について
+
+この資料はプログラミング初心者が、Python を用いてプログラミングに入門するためのものです。
+一人で学習するための資料ではなく, **Python を知っている人と一緒に学習すること**を想定して記述されています。
+
+## Jupyter Notebookのインストール
+
+```
+sh install-jupyter-notebook.sh
+```
+
 ## Jupyter Notebookの起動
 
 ```
