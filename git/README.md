@@ -38,7 +38,8 @@ git push リモートリポジトリ名 ブランチ名
 
 ```
 # <ブランチ名>を新しく作り、そのブランチに切り替える
-git checkout -b ブランチ名
+# git checkout -b ブランチ名 でも可
+git switch -c ブランチ名
 
 # リモートリポジトリに保存
 git push リモートリポジトリ名 ブランチ名
@@ -48,7 +49,8 @@ git push リモートリポジトリ名 ブランチ名
 
 ```
 # <ブランチ名>のブランチに切り替える
-git checkout ブランチ名
+# git checkout ブランチ名 でも可
+git switch ブランチ名
 ```
 
 ## 各種確認コマンド
