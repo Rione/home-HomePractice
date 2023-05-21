@@ -11,35 +11,44 @@ git config --global user.email "自分のメールアドレス"
 
 Githubを使う場合は以下も必要
 
-### SSH鍵の生成
+### SSHキーの生成
 
 ```
 ssh-keygen -t ed25519
 ```
 
-### Githubに鍵を登録
+### GithubにSSHキーを追加
+
+https://docs.github.com/ja/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
 ## 基本
 
 ```
-# "ファイル名"をGitに追加する
+# <ファイル名>をステージングエリアに追加
 git add ファイル名
 
-# コミットメッセージの入力
+# ステージングエリアの内容をローカルリポジトリに保存
 git commit -m "コミットメッセージ"
 
-# リモートにプッシュする
-git push origin ブランチ名
+# リモートリポジトリに保存
+git push リモートリポジトリ名 ブランチ名
 ```
 
 ## ブランチの新規作成
 
 ```
-# "ブランチ名"を新しく作り、そのブランチに切り替える
+# <ブランチ名>を新しく作り、そのブランチに切り替える
 git checkout -b ブランチ名
 
-# リモートに新しく"ブランチ名"のブランチを作る
-git push origin ブランチ名
+# リモートリポジトリに保存
+git push リモートリポジトリ名 ブランチ名
+```
+
+## ブランチの切り替え
+
+```
+# <ブランチ名>のブランチに切り替える
+git checkout ブランチ名
 ```
 
 ## 各種確認コマンド
