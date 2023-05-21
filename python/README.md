@@ -8,7 +8,7 @@
 ## Jupyter Notebookのインストール
 
 ```
-sh install-jupyter-notebook.sh
+pip3 install notebook
 ```
 
 ## Jupyter Notebookの起動
