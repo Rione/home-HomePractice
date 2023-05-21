@@ -63,3 +63,8 @@ git branch
 # コミット履歴
 git log
 ```
+
+## 良い資料
+
+- https://speakerdeck.com/silmin_/gitru-men
+- https://youtu.be/E5nSiTIKGd8
