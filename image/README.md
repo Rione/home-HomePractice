@@ -1,5 +1,11 @@
 # Image
 
+## OpenCVなどのインストール
+
+```
+pip3 install -r requirements.txt
+```
+
 ## 練習
 
 - 顔や目の枠の色を変えてみましょう
