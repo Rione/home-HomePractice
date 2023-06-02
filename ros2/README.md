@@ -1,5 +1,41 @@
 # ROS 2
 
+## セットアップ
+
+### AIロボット入門のDockerイメージ
+
+UbuntuでのDockerのインストール
+
+```
+sh setup-docker.sh
+```
+
+コンテナの起動
+
+```
+./run-ai-robot-book.sh
+```
+
+**初めて起動する場合はDockerHubからイメージ(約10GB)をプルするので注意**
+
+デスクトップ環境の利用
+
+- Remmima(リモートデスクトップクライアント)
+    - プロトコルは`VNC`を選択
+    - アドレスに`127.0.0.1:15900`を入力
+- ブラウザ
+    - `http://127.0.0.1:6080`のアドレスにアクセス
+
+Dockerの詳しく使い方は以下のリンクに
+
+- https://github.com/AI-Robot-Book/chapter1/tree/main/docker
+- https://demura.net/education/22323.html
+
+### 実機
+
+Ubuntu20.04か22.04のパソコンに対応するROS 2をインストールしてください。 \
+https://github.com/ryuichiueda/ros2_setup_scripts
+
 ## turtlesimで遊ぶ
 
 3つターミナルを用意します。 \
