@@ -1,5 +1,13 @@
 # ROS
 
+## セットアップ
+
+`setup-ros-noetic.sh`を使ってください
+
+```
+sh setup-ros-noetic.sh
+```
+
 ## turtlesimで遊ぶ
 
 3つターミナルを用意します。 \
