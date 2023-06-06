@@ -85,3 +85,26 @@ rosmsg show geometry_msgs/Twist
 ## Turtlebot 2を動かす
 
 `roslaunch turtlebot_teleop keyboard_teleop.launch`のトピック通信を参考にTurtlebot2を動かしてください。
+
+## おまけ
+
+簡単なパブリッシャとサブスクライバの例
+
+- [sheep_talker](ros_omake/src/sheep_talker.py)
+- [sheep_listener](ros_omake/src/sheep_listener.py)
+
+### 使い方
+
+```
+cp -r ros_omake ~/catkin_ws/src
+cd ~/catkin_ws
+catkin_make
+```
+
+3つターミナルを開いてそれぞれ以下のコマンドを入力
+
+```
+roscore
+rosrun ros_omake sheep_talker.py
+rosrun ros_omake sheep_listener.py
+```
