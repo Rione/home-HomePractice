@@ -2,7 +2,7 @@
 
 ## セットアップ
 
-`setup-ros-noetic.sh`を使ってください
+ROS noeticのインストール
 
 ```
 sh setup-ros-noetic.sh
@@ -70,21 +70,21 @@ rosmsg show geometry_msgs/Twist
     - パブリッシャは`/suuji`トピックに`Int32`型の整数を送ってください
         - 送る整数は一秒ごとに1足してください
         - 送っている数字をターミナルに表示してください
-    - サブスクライバは`/suuji`トピックから受け取った整数を2倍にしてください
-        - 2倍にした数字をターミナルに表示してください
+    - サブスクライバは`/suuji`トピックから`Int32`型の整数を受け取ってください
+        - 受け取った数字を2倍にしてターミナルに表示してください
 
 ヒント
 
 - > 一秒ごとに...
     - `rospy.Rate()`を使おう
-- > ターミナルで表示する際は...
+- > ターミナルで表示...
     - `rospy.loginfo()`を使おう
 - `.py`ファイルに実行権限を与えよう
-    - `chmod +x ファイル名.py`で実行できるよ
+    - `chmod +x ファイル名.py`で出来るよ
 
 ## Turtlebot 2を動かす
 
-`roslaunch turtlebot_teleop keyboard_teleop.launch`のトピック通信を参考にTurtlebot2を動かしてください。
+`roslaunch turtlebot_teleop keyboard_teleop.launch`のトピック通信を参考にTurtlebot 2を動かしてください。
 
 ## おまけ
 
