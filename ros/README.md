@@ -2,10 +2,16 @@
 
 ## セットアップ
 
-ROS noeticのインストール
+ROS Noeticのインストール
 
 ```
 sh setup-ros-noetic.sh
+```
+
+Turtlebot 2のセットアップ (Noetic)
+
+```
+sh setup-turtlebot2-on-noetic.sh
 ```
 
 ## turtlesimで遊ぶ
@@ -90,8 +96,8 @@ rosmsg show geometry_msgs/Twist
 
 簡単なパブリッシャとサブスクライバの例
 
-- [sheep_talker](ros_omake/src/sheep_talker.py)
-- [sheep_listener](ros_omake/src/sheep_listener.py)
+- [sheep_talker.py](ros_omake/src/sheep_talker.py)
+- [sheep_listener.py](ros_omake/src/sheep_listener.py)
 
 ### 使い方
 
