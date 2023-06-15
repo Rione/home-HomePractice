@@ -5,13 +5,13 @@
 ROS Noeticのインストール
 
 ```
-sh setup-ros-noetic.sh
+./setup-ros-noetic.sh
 ```
 
 Turtlebot 2のセットアップ (Noetic)
 
 ```
-sh setup-turtlebot2-on-noetic.sh
+./setup-turtlebot2-on-noetic.sh
 ```
 
 ## turtlesimで遊ぶ

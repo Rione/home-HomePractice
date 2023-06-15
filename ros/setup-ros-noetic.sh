@@ -2,6 +2,9 @@
 
 set -eu
 
+sudo apt update -y
+sudo apt install -y curl
+
 # https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu20.04_desktop
 curl -sLf https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu20.04_desktop/raw/master/step1.bash | bash
 
