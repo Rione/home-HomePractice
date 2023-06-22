@@ -2,16 +2,26 @@
 
 ## セットアップ
 
-ROS Noeticのインストール
+ROS Noeticのインストール \
+https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu20.04_desktop
 
 ```
-./setup-ros-noetic.sh
+cd ~/
+git clone https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu20.04_desktop
+cd ros_setup_scripts_Ubuntu20.04_desktop/
+./step0.bash
+./step1.bash
 ```
 
-Turtlebot 2のセットアップ (Noetic)
+Turtlebot 2のセットアップ (Noetic) \
+https://github.com/shutosheep/turtlebot2_on_noetic
 
 ```
-./setup-turtlebot2-on-noetic.sh
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+curl -sLf https://raw.githubusercontent.com/shutosheep/turtlebot2_on_noetic/main/install.sh | sh
+cd ~/catkin_ws/
+catkin_make
 ```
 
 ## turtlesimで遊ぶ
