@@ -6,7 +6,6 @@ ROS Noeticのインストール \
 https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu20.04_desktop
 
 ```
-cd ~/
 git clone https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu20.04_desktop
 cd ros_setup_scripts_Ubuntu20.04_desktop/
 ./step0.bash
@@ -27,7 +26,7 @@ catkin_make
 ## turtlesimで遊ぶ
 
 3つターミナルを用意します。 \
-[Terminator](https://github.com/gnome-terminator/terminator)を使うと便利かも...
+[Terminator](https://github.com/gnome-terminator/terminator)を使うと便利かも... (入っていなかったらaptで入れてね)
 
 ```
 roscore
@@ -69,12 +68,13 @@ rosmsg show geometry_msgs/Twist
 
 ## トピック通信の勉強
 
-以下の動画、リンクを参考にしてください
+以下の動画、リンクを参考にしてください。 \
+上田隆一先生がROSについてやROSを使うメリットなどその他もろもろ説明してくれているのでYoutubeの講義の動画を一度見るといいかもしれません。
 
-- https://youtu.be/PL85Pw_zQH0
+- [ロボットシステム学第10回（ROS）](https://youtu.be/PL85Pw_zQH0)
     - 端末を開いて実際にコマンドを実行するのは、56分40秒からにして下さい。それより前の部分のコマンドは実行しないようにしてください。
     - `ssh ubuntu...`どいうコマンドを実行していますが、実行しなくていいです。
-- https://youtu.be/MDCQ4oH6Dlc
+- [ロボットシステム学第10回補足（ローンチファイル）](https://youtu.be/MDCQ4oH6Dlc)
 - https://wiki.ros.org/ja/ROS/Tutorials/UnderstandingNodes
 - https://wiki.ros.org/ja/ROS/Tutorials/UnderstandingTopics
 - https://wiki.ros.org/ja
@@ -98,6 +98,11 @@ rosmsg show geometry_msgs/Twist
 - `.py`ファイルに実行権限を与えよう
     - `chmod +x ファイル名.py`で出来るよ
 
+### 勉強用パッケージ
+
+- [ros_practice](https://github.com/Rione/home_ros_practice)
+- [ros_practice_msgs](https://github.com/Rione/home_ros_practice_msgs)
+
 ## Turtlebot 2を動かす
 
 `roslaunch turtlebot_teleop keyboard_teleop.launch`のトピック通信を参考にTurtlebot 2を動かしてください。
@@ -106,8 +111,8 @@ rosmsg show geometry_msgs/Twist
 
 簡単なパブリッシャとサブスクライバの例
 
-- [sheep_talker.py](ros_omake/src/sheep_talker.py)
-- [sheep_listener.py](ros_omake/src/sheep_listener.py)
+- [sheep_talker.py](ros_omake/src/sheep_talker.py) - パブリッシャ
+- [sheep_listener.py](ros_omake/src/sheep_listener.py) - サブスクライバ
 
 ### 使い方
 
