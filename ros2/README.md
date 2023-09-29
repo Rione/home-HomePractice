@@ -64,10 +64,13 @@ ros2 run turtlesim turtle_teleop_key
 矢印キーで亀さんを動かせます。
 
 ```
+rqt_graph
 ros2 run rqt_graph rqt_graph
 ```
 
-rqtが立ち上がり、トピック通信の様子が確認できます。
+rqt_graphが立ち上がり、トピック通信の様子が確認できます。 \
+2つコマンドを書いていますが、どっちのコマンドでもいいです。
+両方ともrqt_graphを立ち上げて、トピック通信の様子を見ることができます。
 
 `Ctrl+c`で`ros2 run turtlesim turtle_teleop_key`を終了して以下のコマンドを入力する。
 

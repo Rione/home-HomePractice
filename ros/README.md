@@ -41,18 +41,21 @@ rosrun turtlesim turtlesim_node
 亀さんが現れます。
 
 ```
-rosrun turtlesim turtlesim_teleop_key
+rosrun turtlesim turtle_teleop_key
 ```
 
 矢印キーで亀さんを動かせます。
 
 ```
+rqt_graph
 rosrun rqt_graph rqt_graph
 ```
 
-rqtが立ち上がり、トピック通信の様子が確認できます。
+rqt_graphが立ち上がり、トピック通信の様子が確認できます。 \
+2つコマンドを書いていますが、どっちのコマンドでもいいです。
+両方ともrqt_graphを立ち上げて、トピック通信の様子を見ることができます。
 
-`Ctrl+c`で`rosrun turtlesim turtlesim_teleop_key`を終了して以下のコマンドを入力する。
+`Ctrl+c`で`rosrun turtlesim turtle_teleop_key`を終了して以下のコマンドを入力する。
 
 ```
 rostopic pub -r 10 /turtle1/cmd_vel geometry_msgs/Twist '{linear: {x: 0.1}, angular: {z: 0.3}}'
